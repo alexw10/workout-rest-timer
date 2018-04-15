@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Workout Rest Timer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button *ngFor="let time of times"
+          ion-button
+          large
+          full
+          color="dark"
+          (click)="startTimer(time.seconds)"
+          [disabled]="seconds > 0">
+    {{ time.translated }}
+  </button>
+
+  <button ion-button large full color="light" (click)="reset()">
+    Reset
+  </button>
+
+  <button ion-button large full color="dark">
+    {{ seconds }}
+  </button>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "workout-rest-timer",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
